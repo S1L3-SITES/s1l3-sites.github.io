@@ -1,0 +1,88 @@
+/* TABLE THAT CONTAINS THE NAVIGATION BAR */
+.tablenav {
+	border: 1px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(30, 139, 195,0.6);
+	opacity: 1.0;
+	box-shadow: 4px 4px 8px #181818; 
+	top: 2%;
+	left:2%;
+	position: fixed;
+	max-width: 100%;
+	min-width: 10%;
+	display: block;
+}
+
+/*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
+PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  top: 2%;
+  left: 2%;
+}
+
+li {
+  max-width: 100%;
+  text-align: center;
+
+}
+
+li a {
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  max-width: 100%;
+ 
+}
+
+li a:hover {
+background-color: rgba(137, 196, 244,1);
+border-radius: 10px;
+color: #111;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(149,232,215,1), 0 0 20px rgba(149,232,215,1), 0 0 30px rgba(149,232,215,1), 0 0 40px rgba(149,232,215,1), 0 0 50px rgba(149,232,215,1), 0 0 60px rgba(149,232,215,1), 0 0 70px rgba(149,232,215,1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(144,153,212,1), 0 0 30px rgba(144,153,212,1), 0 0 40px rgba(144,153,212,1), 0 0 50px rgba(144,153,212,1), 0 0 60px rgba(144,153,212,1), 0 0 70px rgba(144,153,212,1), 0 0 80px rgba(144,153,212,1);
+  }
+}
+
+/* FOR LINKS IN THE PAGE, NOT PART OF THE NAVIGATION BAR */
+a:link, a:visited, a:active  {
+ 	color: white;
+	text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);
+}
+a:hover {
+	text-shadow: none;
+}
+
+.hrsepnav {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	max-width: 100%;
+}
+
+.guestbook {
+	border: 1px outset #ffffff;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(144,153,212,1);
+	opacity: 1.0;
+	box-shadow: 4px 4px 8px #181818; 
+	max-width: 100%;
+	text-align: center;
+}

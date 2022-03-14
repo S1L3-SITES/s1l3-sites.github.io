@@ -1,0 +1,51 @@
+.container {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 65vh;
+}
+
+.box {
+  -webkit-box-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin: 0%;
+  line-height: 0%;
+}
+
+.box > img {
+  width: 150%;
+  height: calc(120% /*-10vh*/);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/*
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+*/
+
+.box:hover {
+  -webkit-box-flex: 1;
+          flex: 1 1 80%;
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+  opacity: 1.0;
+ object-fit: contain;
+  -webkit-transition: 1s;
+  transition: 1s;
+}

@@ -1,0 +1,318 @@
+/*WRITTEN BY STEVIE EELES*/
+/*CSS IS ORDERED BY APPEARANCE IN HTML DOCUMENT*/
+
+/* OH BY THE WAY, THIS TEXT IS HIDDEN. ITS CALLED
+A "COMMENT" OR "REMARK" */
+
+/* MAIN DESKTOP CSS CONFIG */
+
+
+/*CONTROLS THE MAIN DOCUMENT, NO EDITING NEEDED
+UNLESS BACKGROUND COLOUR OR IMAGE NEED CHANGING*/
+html {
+	background-color: rgba(0, 181, 204,1);
+	/*background-image: url(../images/bg.png);*/
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	scroll-behaviour: smooth;
+	font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+	/*font-weight: regular;*/
+	-webkit-font-smoothing: antialiased;
+}
+
+/*CONTROLS THE MAIN BODY - THE LIGHT BLUE AREA.
+AGAIN, PROBABLY NO EDIITING NEEDED*/
+.bodyindex {
+	border: 1px outset #ffffff;
+	border-radius: 4px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	margin-top: 1%;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: rgba(30, 139, 195,0.6);
+	color: #ffffff;
+	display: block;
+	
+}
+.bodyindex_slide {
+	border: 1px outset #ffffff;
+	border-radius: 4px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	margin-top: 1%;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: rgba(30, 139, 195,0.6);
+	color: #ffffff;
+	display: block;
+	
+}
+
+/*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
+SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
+.logo {
+	max-width: 100%;
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 5px;
+	padding-right: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: none;
+	width: 500px;
+	height: 176px;
+	box-shadow: 4px 6px 6px rgba(191,191,191,1);
+	opacity: 1.0;
+	display: flex;
+}
+
+/*THE MAIN PURPLE TABLE WITH THE MAIN BODY TEXT IN */
+/* UNIVERSAL TABLE SETTINGS*/
+.tablemain {
+	border: 2px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(137, 196, 244,1);
+	margin-left: 0%;
+	box-shadow: 4px 4px 8px #181818; 
+}
+
+/* TABLE FOR INDEX.HTML */
+.tableindex {
+	border: 2px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(137, 196, 244,1);
+	margin-left: 0%;
+	margin-right:0%;
+	box-shadow: 4px 4px 8px #181818; 
+}
+/* TABLE FOR INDEX.HTML */
+.tableindex_slide {
+	border: 2px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(137, 196, 244,1);
+	margin-left: 0%;
+	margin-right:0%;
+	box-shadow: 4px 4px 8px #181818;
+	
+}
+/* TABLE FOR guestbook */
+.tableguest {
+	border: 2px outset #ffffff;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(144,153,212,1);
+	left: 10%
+	box-shadow: 4px 4px 8px #181818; 
+}
+
+
+/*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
+THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
+A CUSTOM FONT AND CONTROLS THAT*/
+.tdbg {
+	width: 250px; 
+	height: 100px;
+	color: white;
+	font-family: 'OpenDyslexic';
+	src: url(ODR.woff2) format(woff2); 
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size: 1.875em;
+	font-stretch: condensed;
+}
+.tdbg_slide {
+	width: 250px; 
+	height: 150px;
+	color: white;
+	font-family: 'OpenDyslexic';
+	src: url(ODR.woff2) format(woff2); 
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size: 1.875em;
+	font-stretch: condensed;
+
+	
+}
+
+.tdbg2 {
+	width: 250px; 
+	height: 50px;
+	color: white;
+	font-family: 'OpenDyslexic';
+	src: url(ODR.woff2) format(woff2); 
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size: 1.875em;
+	font-stretch: condensed;
+	text-shadow: none;
+	text-align: center;
+}
+
+/* SAME AS ABOVE, CHANGES SOME SIZING FOR THE 
+BOOKS PAGE */
+.tdbgbook {
+	/*background-image:url(../images/tdbg.jpg);*/
+	/*background-repeat:no-repeat;*/
+	/*background-size:750px 850px;*/ 
+	width: 100px; 
+	height: 10px;
+	color: white;
+	font-family: 'OpenDyslexic';
+	src: url(ODR.woff2) format(woff2); 
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size: 1.875;
+	font-stretch: condensed;
+}
+
+/* UNIVERSAL IMAGE CONTROL. JUST ADDS ROUNDED CORNERS
+AND A BORDER, DOESNT CONTROL SIZE*/
+.images
+{
+	max-width: 100%;
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 15px;
+	padding-right: 0px;
+	padding-left: 10px
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: none;
+	z-index: 1;
+	
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
+}
+
+/*TO MAKE THE BOOK IMAGES RESIZE IN SMALLER WINDOWS */
+.bookimages
+{
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 15px;
+	max-width: 100%;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+	padding-right: 0px;
+	padding-left: 10px
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	background-color: none;
+	z-index: 1;
+	
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
+}
+
+.hrsep {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	width: 400px;
+	z-index: 1;
+}
+
+
+/* box-shadow: 2px 2px 4px #ffffff; */
+
+/* CONTROLS THE BORDERS AND FORMATTING OF THE SOCIAL
+MEDIA IMAGE LINKS */
+.socials
+{
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 5px;
+	padding-right: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: none;
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
+}
+
+/* FOOTER AT THE BOTTOM OF THE PAGE. NO EDITING NEEDED */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.righttable1 {
+	border: 1px outset #ffffff;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(144,153,212,1);
+	box-shadow: 4px 4px 8px #181818; 
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	top: 2%;
+	right:2%;
+	position: fixed;
+	width: 14%;
+	max-width: 100%;
+	display: block;
+}
+
+.righttable2 {
+	border: 1px outset #ffffff;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(144,153,212,1);
+	box-shadow: 4px 4px 8px #181818; 
+	padding-left: 1.6%;
+	padding-right: 0.5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	top: 25%;
+	right:2%;
+	position: fixed;
+	width: 14%;
+	max-width: 100%;
+	display: block;
+}
+.noshadow {
+	color: white;
+	font-family: 'OpenDyslexic';
+	src: url(ODR.woff2) format(woff2); 
+	text-decoration: none;
+	letter-spacing: none;
+	font-weight: normal;
+	font-size: 1.875;
+	font-stretch: condensed;
+	box-shadow: 0px, 0px, 0px, #000000;
+	text-shadow: none;
+}
