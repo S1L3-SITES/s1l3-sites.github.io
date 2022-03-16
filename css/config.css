@@ -17,11 +17,11 @@ html {
 	height: auto;
 	scroll-behaviour: smooth;
 	font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
-	/*font-weight: regular;*/
+	font-weight: regular;
 	-webkit-font-smoothing: antialiased;
 }
 
-/*CONTROLS THE MAIN BODY - THE LIGHT BLUE AREA.
+/*CONTROLS THE MAIN BODY - the main square in the middle.
 AGAIN, PROBABLY NO EDIITING NEEDED*/
 .bodyindex {
 	border: 1px outset #ffffff;
@@ -40,23 +40,93 @@ AGAIN, PROBABLY NO EDIITING NEEDED*/
 	display: block;
 	
 }
-.bodyindex_slide {
+/* NAVIGATION AREA BEGINS */
+
+/* TABLE THAT CONTAINS THE NAVIGATION BAR */
+.tablenav {
 	border: 1px outset #ffffff;
 	border-radius: 4px;
-	box-shadow: 4px 4px 8px #181818; 
-	padding-top: 5px;
-	padding-bottom: 20px;
-	padding-right: 5px;
-	padding-left: 4px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-	margin-top: 1%;
-	margin-right: 20%;
-	margin-left: 20%;
+	color: rgba(255, 255, 255, 1);
 	background-color: rgba(30, 139, 195,0.6);
-	color: #ffffff;
-	display: block;
-	
+	opacity: 1.0;
+	box-shadow: 4px 4px 8px #181818; 
+	top: 2%;
+	left:2%;
+	position: fixed;
+	max-width: 15%;
+	min-width: 10%;
+	margin-right: 1%;
+	margin-left: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	float: left;
 }
+
+/*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
+PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  top: 2%;
+  left: 16%;
+  right:5%;
+  position: relative;
+}
+
+li {
+  max-width: 100%;
+  text-align: center;
+
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  max-width: 100%;
+ 
+}
+
+li a:hover {
+background-color: rgba(137, 196, 244,1);
+border-radius: 10px;
+color: #111;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(149,232,215,1), 0 0 20px rgba(149,232,215,1), 0 0 30px rgba(149,232,215,1), 0 0 40px rgba(149,232,215,1), 0 0 50px rgba(149,232,215,1), 0 0 60px rgba(149,232,215,1), 0 0 70px rgba(149,232,215,1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(144,153,212,1), 0 0 30px rgba(144,153,212,1), 0 0 40px rgba(144,153,212,1), 0 0 50px rgba(144,153,212,1), 0 0 60px rgba(144,153,212,1), 0 0 70px rgba(144,153,212,1), 0 0 80px rgba(144,153,212,1);
+  }
+}
+
+/* FOR LINKS IN THE PAGE, NOT PART OF THE NAVIGATION BAR */
+a:link, a:visited, a:active  {
+ 	color: white;
+	text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);
+}
+a:hover {
+	text-shadow: none;
+}
+
+.hrsepnav {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	max-width: 100%;
+}
+
+/*NAVIGATION AREA ENDS*/
 
 /*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
 SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
@@ -75,7 +145,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	display: flex;
 }
 
-/*THE MAIN PURPLE TABLE WITH THE MAIN BODY TEXT IN */
+/*THE MAIN light blue table with BODY TEXT IN */
 /* UNIVERSAL TABLE SETTINGS*/
 .tablemain {
 	border: 2px outset #ffffff;
@@ -96,26 +166,6 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	margin-right:0%;
 	box-shadow: 4px 4px 8px #181818; 
 }
-/* TABLE FOR INDEX.HTML */
-.tableindex_slide {
-	border: 2px outset #ffffff;
-	border-radius: 4px;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(137, 196, 244,1);
-	margin-left: 0%;
-	margin-right:0%;
-	box-shadow: 4px 4px 8px #181818;
-	
-}
-/* TABLE FOR guestbook */
-.tableguest {
-	border: 2px outset #ffffff;
-	border-radius: 15px;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(144,153,212,1);
-	left: 10%
-	box-shadow: 4px 4px 8px #181818; 
-}
 
 
 /*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
@@ -133,21 +183,6 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-size: 1.875em;
 	font-stretch: condensed;
 }
-.tdbg_slide {
-	width: 250px; 
-	height: 150px;
-	color: white;
-	font-family: 'OpenDyslexic';
-	src: url(ODR.woff2) format(woff2); 
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: normal;
-	font-size: 1.875em;
-	font-stretch: condensed;
-
-	
-}
-
 .tdbg2 {
 	width: 250px; 
 	height: 50px;
@@ -289,20 +324,30 @@ MEDIA IMAGE LINKS */
 
 .righttable2 {
 	border: 1px outset #ffffff;
-	border-radius: 15px;
+	border-radius: 4px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(144,153,212,1);
+	background-color: rgba(30, 139, 195,0.6);
 	box-shadow: 4px 4px 8px #181818; 
-	padding-left: 1.6%;
-	padding-right: 0.5%;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
-	top: 25%;
-	right:2%;
+	padding-left: 0.0%;
+	padding-right: 0.0%;
+	padding-top: 0.0%;
+	padding-bottom: 0.0%;
+	top: 2%;
+	right:3%;
 	position: fixed;
 	width: 14%;
 	max-width: 100%;
 	display: block;
+}
+.tableindex_right {
+	max-width:100%;
+	border: 2px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(137, 196, 244,1);
+	margin-left: 0%;
+	margin-right:0%;
+	box-shadow: 4px 4px 8px #181818; 
 }
 .noshadow {
 	color: white;

@@ -8,9 +8,8 @@
 	box-shadow: 4px 4px 8px #181818; 
 	top: 2%;
 	left:2%;
-	position: fixed;
+	position: relative;
 	max-width: 100%;
-	min-width: 10%;
 	display: block;
 }
 
