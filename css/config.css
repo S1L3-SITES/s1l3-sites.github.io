@@ -9,14 +9,19 @@ A "COMMENT" OR "REMARK" */
 
 /*CONTROLS THE MAIN DOCUMENT, NO EDITING NEEDED
 UNLESS BACKGROUND COLOUR OR IMAGE NEED CHANGING*/
+.site_font {
+	font-family: 'Nexa', sans-serif;
+}
+
 html {
-	background-color: rgba(0, 181, 204,1);
+	background-color: rgba(97,117,117,0.8);
+	/* ORIGINAL background-color: rgba(0, 181, 204,1);*/
 	/*background-image: url(../images/bg.png);*/
 	background-attachment: fixed;
 	width: 100%;
 	height: auto;
 	scroll-behaviour: smooth;
-	font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+	/*font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";*/
 	font-weight: regular;
 	-webkit-font-smoothing: antialiased;
 }
@@ -25,17 +30,17 @@ html {
 AGAIN, PROBABLY NO EDIITING NEEDED*/
 .bodyindex {
 	border: 1px outset #ffffff;
-	border-radius: 4px;
+	border-radius: 2px;
 	box-shadow: 4px 4px 8px #181818; 
 	padding-top: 5px;
 	padding-bottom: 20px;
 	padding-right: 5px;
 	padding-left: 4px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	margin-top: 1%;
 	margin-right: 20%;
 	margin-left: 20%;
-	background-color: rgba(30, 139, 195,0.6);
+	background-color: rgba(94, 148, 150,0.8);
 	color: #ffffff;
 	display: block;
 	
@@ -43,23 +48,33 @@ AGAIN, PROBABLY NO EDIITING NEEDED*/
 /* NAVIGATION AREA BEGINS */
 
 /* TABLE THAT CONTAINS THE NAVIGATION BAR */
-.tablenav {
+.nav_div {
+	max-width: 20%;
+	min-width: 10%;
 	border: 1px outset #ffffff;
-	border-radius: 4px;
+	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(30, 139, 195,0.6);
+	background-color: rgba(94, 148, 150,0.8);
 	opacity: 1.0;
 	box-shadow: 4px 4px 8px #181818; 
 	top: 2%;
 	left:2%;
 	position: fixed;
-	max-width: 15%;
-	min-width: 10%;
-	margin-right: 1%;
-	margin-left: 1%;
 	display: flex;
 	flex-wrap: wrap;
 	float: left;
+
+}
+
+.tablenav {
+	
+	margin-left: 0%;
+	max-width: 100%;
+	min-width: 10%;
+	margin-right: 0%;
+	margin-left: 0%;
+	font-family: 'Nexa', sans-serif;
+	position: relative;
 }
 
 /*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
@@ -67,11 +82,11 @@ PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0%;
   max-width: 100%;
   top: 2%;
-  left: 16%;
-  right:5%;
+  left: 0%;
+  right:0%;
   position: relative;
 }
 
@@ -92,7 +107,7 @@ li a {
 }
 
 li a:hover {
-background-color: rgba(137, 196, 244,1);
+background-color: rgba(55, 151, 154,0.8);
 border-radius: 10px;
 color: #111;
 -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -140,7 +155,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	background-color: none;
 	width: 500px;
 	height: 176px;
-	box-shadow: 4px 6px 6px rgba(191,191,191,1);
+	/*box-shadow: 4px 6px 6px rgba(97,117,117,1);*/
 	opacity: 1.0;
 	display: flex;
 }
@@ -149,7 +164,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 /* UNIVERSAL TABLE SETTINGS*/
 .tablemain {
 	border: 2px outset #ffffff;
-	border-radius: 4px;
+	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(137, 196, 244,1);
 	margin-left: 0%;
@@ -159,9 +174,9 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 /* TABLE FOR INDEX.HTML */
 .tableindex {
 	border: 2px outset #ffffff;
-	border-radius: 4px;
+	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(137, 196, 244,1);
+	background-color: rgba(55, 151, 154,0.8);
 	margin-left: 0%;
 	margin-right:0%;
 	box-shadow: 4px 4px 8px #181818; 
@@ -175,27 +190,33 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	width: 250px; 
 	height: 100px;
 	color: white;
-	font-family: 'OpenDyslexic';
-	src: url(ODR.woff2) format(woff2); 
 	text-decoration: none;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	font-weight: normal;
 	font-size: 1.875em;
 	font-stretch: condensed;
 }
 .tdbg2 {
-	width: 250px; 
-	height: 50px;
+	width: 200px; 
+	height: 100px;
 	color: white;
-	font-family: 'OpenDyslexic';
-	src: url(ODR.woff2) format(woff2); 
 	text-decoration: none;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	font-weight: normal;
-	font-size: 1.875em;
-	font-stretch: condensed;
-	text-shadow: none;
-	text-align: center;
+	font-size: 1.875;
+	font-stretch: none;
+	font-family: 'Nexa', sans-serif;
+}
+
+.tdbg2_nav {
+	max-width: 100%; 
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1.5em;
+	font-stretch: none;
+	font-family: 'Nexa', sans-serif;
 }
 
 /* SAME AS ABOVE, CHANGES SOME SIZING FOR THE 
@@ -207,8 +228,6 @@ BOOKS PAGE */
 	width: 100px; 
 	height: 10px;
 	color: white;
-	font-family: 'OpenDyslexic';
-	src: url(ODR.woff2) format(woff2); 
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: normal;
@@ -326,7 +345,7 @@ MEDIA IMAGE LINKS */
 	border: 1px outset #ffffff;
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(30, 139, 195,0.6);
+	background-color: rgba(94, 148, 150,0.8);
 	box-shadow: 4px 4px 8px #181818; 
 	padding-left: 0.0%;
 	padding-right: 0.0%;
@@ -344,15 +363,13 @@ MEDIA IMAGE LINKS */
 	border: 2px outset #ffffff;
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(137, 196, 244,1);
+	background-color: rgba(55, 151, 154,0.8);
 	margin-left: 0%;
 	margin-right:0%;
 	box-shadow: 4px 4px 8px #181818; 
 }
 .noshadow {
 	color: white;
-	font-family: 'OpenDyslexic';
-	src: url(ODR.woff2) format(woff2); 
 	text-decoration: none;
 	letter-spacing: none;
 	font-weight: normal;
