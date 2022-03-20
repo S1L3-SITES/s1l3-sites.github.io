@@ -195,7 +195,21 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-weight: normal;
 	font-size: 1.875em;
 	font-stretch: condensed;
+	font-family: 'Nexa', sans-serif;
 }
+
+.tdbg_about {
+	width: 70%; 
+	height: 50%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: medium;
+	font-stretch: 50%;
+	font-family: 'Nexa', sans-serif;
+}
+
 .tdbg2 {
 	width: 200px; 
 	height: 100px;
