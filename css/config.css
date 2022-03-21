@@ -28,7 +28,6 @@ html {
 	height: auto;
 	scroll-behavior: smooth;
 	/*font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";*/
-	font-weight: regular;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -46,8 +45,6 @@ html {
 	opacity: 1.0;
 	box-shadow: 4px 4px 8px #181818; 
 	top: 0%;
-	padding-left: auto;
-	padding-right: auto;
 	margin-left: 5%;
 	margin-right: 5%;
 	position: fixed;
@@ -228,12 +225,36 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-weight: normal;
-	font-size: 1.875;
+	font-size: 16px;
 	font-family: 'Nexa', sans-serif;
 	vertical-align: center;
 	text-align: center;
 }
 
+.tdbg_about {
+	width: 70%; 
+	height: 50%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: medium;
+	font-stretch: 50%;
+	font-family: 'Nexa', sans-serif;
+}
+.tdbg_slide {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 16px;
+	font-stretch: condensed;
+	font-family: 'Nexa', sans-serif;
+	vertical-align: center;
+	text-align: center;
+}
 .hrsep {
 	border: 4px ridge #ffffff;
 	border-radius: 2px;
@@ -254,55 +275,17 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	margin-left: 0%;
 	box-shadow: 4px 4px 8px #181818; 
 }
-
-
-
-
-
-
-.tdbg_about {
-	width: 70%; 
-	height: 50%;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-size: medium;
-	font-stretch: 50%;
-	font-family: 'Nexa', sans-serif;
-}
-
-
-
-/* SAME AS ABOVE, CHANGES SOME SIZING FOR THE 
-BOOKS PAGE */
-.tdbgbook {
-	/*background-image:url(../images/tdbg.jpg);*/
-	/*background-repeat:no-repeat;*/
-	/*background-size:750px 850px;*/ 
-	width: 100px; 
-	height: 10px;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: normal;
-	font-size: 1.875;
-	font-stretch: condensed;
-}
-
-/* UNIVERSAL IMAGE CONTROL. JUST ADDS ROUNDED CORNERS
-AND A BORDER, DOESNT CONTROL SIZE*/
 .images
 {
 	max-width: 100%;
 	border: 1px solid rgba(255,255,255,1);
-	border-radius: 15px;
+	border-radius: 2px;
 	padding-right: 0px;
-	padding-left: 10px;
+	padding-left: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background-color: none;
-	z-index: 1;
+	vertical-align: middle;
 	
 /*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
@@ -311,28 +294,20 @@ AND A BORDER, DOESNT CONTROL SIZE*/
 .bookimages
 {
 	border: 1px solid rgba(255,255,255,1);
-	border-radius: 15px;
+	border-radius: 2px;
 	max-width: 100%;
 	-webkit-box-flex: 1;
     -moz-box-flex: 1;
-    box-flex: 1;
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto; 
 	padding-right: 0px;
-	padding-left: 10px;
+	padding-left: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 
 	background-color: none;
-	z-index: 1;
-	
 /*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
-
-
-
-
-/* box-shadow: 2px 2px 4px #ffffff; */
 
 /* CONTROLS THE BORDERS AND FORMATTING OF THE SOCIAL
 MEDIA IMAGE LINKS */
@@ -346,7 +321,6 @@ MEDIA IMAGE LINKS */
 	background-color: none;
 	width: 40px;
 	height: 40px;
-	z-index: 1;
 
 /*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
@@ -359,7 +333,7 @@ MEDIA IMAGE LINKS */
   width: 100%;
   color: #ffffff;
   text-align: center;
-  z-index: 1;
+
 }
 
 .glow {
