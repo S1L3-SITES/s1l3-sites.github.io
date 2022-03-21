@@ -20,37 +20,19 @@ html {
 	background-attachment: fixed;
 	width: 100%;
 	height: auto;
-	scroll-behaviour: smooth;
+	scroll-behavior: smooth;
 	/*font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";*/
 	font-weight: regular;
 	-webkit-font-smoothing: antialiased;
 }
 
-/*CONTROLS THE MAIN BODY - the main square in the middle.
-AGAIN, PROBABLY NO EDIITING NEEDED*/
-.bodyindex {
-	border: 1px outset #ffffff;
-	border-radius: 2px;
-	box-shadow: 4px 4px 8px #181818; 
-	padding-top: 5px;
-	padding-bottom: 20px;
-	padding-right: 5px;
-	padding-left: 4px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	margin-top: 1%;
-	margin-right: 20%;
-	margin-left: 20%;
-	background-color: rgba(94, 148, 150,0.8);
-	color: #ffffff;
-	display: block;
-	
-}
 /* NAVIGATION AREA BEGINS */
 
 /* TABLE THAT CONTAINS THE NAVIGATION BAR */
 .nav_div {
-	max-width: 20%;
-	min-width: 10%;
+	max-width: 16%;
+	min-width: 5%;
+	min-height: 40%;
 	border: 1px outset #ffffff;
 	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
@@ -58,40 +40,44 @@ AGAIN, PROBABLY NO EDIITING NEEDED*/
 	opacity: 1.0;
 	box-shadow: 4px 4px 8px #181818; 
 	top: 2%;
-	left:2%;
+	left: 2%;
+	padding-left: 0%;
+	padding-right: 5%;
 	position: fixed;
 	display: flex;
 	flex-wrap: wrap;
 	float: left;
-
+	white-space: nowrap;
 }
 
 .tablenav {
-	
-	margin-left: 0%;
-	max-width: 100%;
-	min-width: 10%;
-	margin-right: 0%;
-	margin-left: 0%;
+	max-width: 16%;
+	min-width: 5%;
 	font-family: 'Nexa', sans-serif;
+	font-size: 1.5vw;
 	position: relative;
+	vertical-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 0%;
+	min-height: 40%;
 }
 
 /*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
 PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0%;
   max-width: 100%;
+  min-width: 5%;
   top: 2%;
-  left: 0%;
+  left: -8%;
   right:0%;
   position: relative;
 }
 
 li {
   max-width: 100%;
+  min-width: 5%;
   text-align: center;
 
 }
@@ -103,12 +89,13 @@ li a {
   padding: 12px 14px;
   text-decoration: none;
   max-width: 100%;
+  min-width: 5%;
  
 }
 
 li a:hover {
 background-color: rgba(55, 151, 154,0.8);
-border-radius: 10px;
+border-radius: 2px;
 color: #111;
 -webkit-animation: glow 1s ease-in-out infinite alternate;
 -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -138,27 +125,118 @@ a:hover {
 	border-radius: 2px;
 	margin-top: 6px;
 	margin-bottom: 6px;
-	max-width: 100%;
+	max-width: 30%;
+	min-width: 5%;
+}
+
+.tdbg2_nav {
+	max-width: 100%; 
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: 'Nexa', sans-serif;
+	text-align: center;
 }
 
 /*NAVIGATION AREA ENDS*/
 
+.righttable2 {
+	border: 1px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(94, 148, 150,0.8);
+	box-shadow: 4px 4px 8px #181818; 
+	padding-left: 0.0%;
+	padding-right: 0.0%;
+	padding-top: 0.0%;
+	padding-bottom: 0.0%;
+	top: 2%;
+	right:3%;
+	position: fixed;
+	width: 14%;
+	max-width: 100%;
+	display: block;
+	z-index: 2;
+}
+
+
+/*CONTROLS THE MAIN BODY - the main square in the middle.
+AGAIN, PROBABLY NO EDIITING NEEDED*/
+.bodyindex {
+	border: 1px outset #ffffff;
+	border-radius: 2px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	margin-top: 1%;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: rgba(94, 148, 150,0.8);
+	color: #ffffff;
+	display: block;
+	z-index: 3;
+	max-width: 60%;
+	min-width: 20%;
+	
+}
+
 /*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
 SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 .logo {
-	max-width: 100%;
+	max-width: 60%;
+	min-width: 10%;
 	border: 1px solid rgba(255,255,255,1);
 	border-radius: 5px;
 	padding-right: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	background-color: none;
 	width: 500px;
 	height: 176px;
 	/*box-shadow: 4px 6px 6px rgba(97,117,117,1);*/
 	opacity: 1.0;
 	display: flex;
 }
+
+/*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
+THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
+A CUSTOM FONT AND CONTROLS THAT*/
+.tdbg {
+	max-width: 60%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1.875em;
+	font-stretch: condensed;
+	font-family: 'Nexa', sans-serif;
+}
+
+.tdbg2 {
+	max-width: 60%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1.875;
+	font-family: 'Nexa', sans-serif;
+}
+
+.hrsep {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	max-width: 60%;
+	min-width: 10%;
+}
+
 
 /*THE MAIN light blue table with BODY TEXT IN */
 /* UNIVERSAL TABLE SETTINGS*/
@@ -169,6 +247,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	background-color: rgba(137, 196, 244,1);
 	margin-left: 0%;
 	box-shadow: 4px 4px 8px #181818; 
+	z-index: 3;
 }
 
 /* TABLE FOR INDEX.HTML */
@@ -183,20 +262,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 }
 
 
-/*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
-THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
-A CUSTOM FONT AND CONTROLS THAT*/
-.tdbg {
-	width: 250px; 
-	height: 100px;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-size: 1.875em;
-	font-stretch: condensed;
-	font-family: 'Nexa', sans-serif;
-}
+
 
 .tdbg_about {
 	width: 70%; 
@@ -210,28 +276,7 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-family: 'Nexa', sans-serif;
 }
 
-.tdbg2 {
-	width: 200px; 
-	height: 100px;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-size: 1.875;
-	font-stretch: none;
-	font-family: 'Nexa', sans-serif;
-}
 
-.tdbg2_nav {
-	max-width: 100%; 
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-size: 1.5em;
-	font-stretch: none;
-	font-family: 'Nexa', sans-serif;
-}
 
 /* SAME AS ABOVE, CHANGES SOME SIZING FOR THE 
 BOOKS PAGE */
@@ -257,7 +302,7 @@ AND A BORDER, DOESNT CONTROL SIZE*/
 	border: 1px solid rgba(255,255,255,1);
 	border-radius: 15px;
 	padding-right: 0px;
-	padding-left: 10px
+	padding-left: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background-color: none;
@@ -278,7 +323,7 @@ AND A BORDER, DOESNT CONTROL SIZE*/
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto; 
 	padding-right: 0px;
-	padding-left: 10px
+	padding-left: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 
@@ -288,14 +333,7 @@ AND A BORDER, DOESNT CONTROL SIZE*/
 /*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
 
-.hrsep {
-	border: 4px ridge #ffffff;
-	border-radius: 2px;
-	margin-top: 6px;
-	margin-bottom: 6px;
-	width: 400px;
-	z-index: 1;
-}
+
 
 
 /* box-shadow: 2px 2px 4px #ffffff; */
@@ -355,23 +393,7 @@ MEDIA IMAGE LINKS */
 	display: block;
 }
 
-.righttable2 {
-	border: 1px outset #ffffff;
-	border-radius: 4px;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(94, 148, 150,0.8);
-	box-shadow: 4px 4px 8px #181818; 
-	padding-left: 0.0%;
-	padding-right: 0.0%;
-	padding-top: 0.0%;
-	padding-bottom: 0.0%;
-	top: 2%;
-	right:3%;
-	position: fixed;
-	width: 14%;
-	max-width: 100%;
-	display: block;
-}
+
 .tableindex_right {
 	max-width:100%;
 	border: 2px outset #ffffff;
@@ -381,6 +403,7 @@ MEDIA IMAGE LINKS */
 	margin-left: 0%;
 	margin-right:0%;
 	box-shadow: 4px 4px 8px #181818; 
+	float: right;
 }
 .noshadow {
 	color: white;
