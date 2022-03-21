@@ -12,6 +12,12 @@ UNLESS BACKGROUND COLOUR OR IMAGE NEED CHANGING*/
 .site_font {
 	font-family: 'Nexa', sans-serif;
 }
+/* MAIN CONTROLLING ELEMENTS */
+
+table, p, td, div {
+	vertical-align: center;
+	text-align: center;
+}
 
 html {
 	background-color: rgba(97,117,117,0.8);
@@ -30,94 +36,64 @@ html {
 
 /* TABLE THAT CONTAINS THE NAVIGATION BAR */
 .nav_div {
-	max-width: 16%;
+	width: 90%;
 	min-width: 5%;
-	min-height: 40%;
+	min-height: 5%;
 	border: 1px outset #ffffff;
 	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(94, 148, 150,0.8);
+	background-color: rgba(94, 148, 150,1);
 	opacity: 1.0;
 	box-shadow: 4px 4px 8px #181818; 
-	top: 2%;
-	left: 2%;
-	padding-left: 0%;
-	padding-right: 5%;
+	top: 0%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 	position: fixed;
-	display: flex;
-	flex-wrap: wrap;
-	float: left;
-	white-space: nowrap;
 }
 
 .tablenav {
-	max-width: 16%;
+	width: 100%;
 	min-width: 5%;
 	font-family: 'Nexa', sans-serif;
 	font-size: 1.5vw;
 	position: relative;
-	vertical-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 0%;
+	margin-left: auto;
+	margin-right: auto;
 	min-height: 40%;
+	vertical-align: middle;
 }
 
 /*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
 PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
+
 ul {
   list-style-type: none;
-  max-width: 100%;
-  min-width: 5%;
-  top: 2%;
-  left: -8%;
-  right:0%;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(94, 148, 150,0.8);
 }
 
 li {
-  max-width: 100%;
-  min-width: 5%;
-  text-align: center;
+  float: left;
 
 }
 
 li a {
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
-  padding: 12px 14px;
+  padding: 14px 16px;
   text-decoration: none;
-  max-width: 100%;
-  min-width: 5%;
- 
 }
-
+.active {
+  background-color: rgba(137, 196, 244,1);
+}
 li a:hover {
-background-color: rgba(55, 151, 154,0.8);
-border-radius: 2px;
-color: #111;
--webkit-animation: glow 1s ease-in-out infinite alternate;
--moz-animation: glow 1s ease-in-out infinite alternate;
-animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px rgba(149,232,215,1), 0 0 20px rgba(149,232,215,1), 0 0 30px rgba(149,232,215,1), 0 0 40px rgba(149,232,215,1), 0 0 50px rgba(149,232,215,1), 0 0 60px rgba(149,232,215,1), 0 0 70px rgba(149,232,215,1);
-  }
-  to {
-    text-shadow: 0 0 20px rgba(144,153,212,1), 0 0 30px rgba(144,153,212,1), 0 0 40px rgba(144,153,212,1), 0 0 50px rgba(144,153,212,1), 0 0 60px rgba(144,153,212,1), 0 0 70px rgba(144,153,212,1), 0 0 80px rgba(144,153,212,1);
-  }
-}
-
-/* FOR LINKS IN THE PAGE, NOT PART OF THE NAVIGATION BAR */
-a:link, a:visited, a:active  {
- 	color: white;
-	text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);
-}
-a:hover {
-	text-shadow: none;
+  background-color: rgba(97,117,117,0.8);
+  color: white;
 }
 
 .hrsepnav {
@@ -129,15 +105,23 @@ a:hover {
 	min-width: 5%;
 }
 
-.tdbg2_nav {
-	max-width: 100%; 
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-size: 1em;
-	font-family: 'Nexa', sans-serif;
-	text-align: center;
+a:link {
+  color: white
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
 }
 
 /*NAVIGATION AREA ENDS*/
@@ -158,7 +142,8 @@ a:hover {
 	width: 14%;
 	max-width: 100%;
 	display: block;
-	z-index: 2;
+	text-align: center;
+	vertical-align: center;
 }
 
 
@@ -173,16 +158,30 @@ AGAIN, PROBABLY NO EDIITING NEEDED*/
 	padding-right: 5px;
 	padding-left: 4px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	margin-top: 1%;
-	margin-right: 20%;
-	margin-left: 20%;
+	margin-top: 7%;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: rgba(94, 148, 150,0.8);
 	color: #ffffff;
 	display: block;
-	z-index: 3;
-	max-width: 60%;
+	width: 80%;
 	min-width: 20%;
+	vertical-align: middle;
 	
+}
+
+/* TABLE FOR INDEX.HTML */
+.tableindex {
+	border: 2px outset #ffffff;
+	border-radius: 2px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(55, 151, 154,0.8);
+	margin-left: auto;
+	margin-right:auto;
+	box-shadow: 4px 4px 8px #181818; 
+	vertical-align: middle;
+	text-align: center;
+	width: 70%;
 }
 
 /*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
@@ -195,18 +194,21 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	padding-right: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 500px;
 	height: 176px;
 	/*box-shadow: 4px 6px 6px rgba(97,117,117,1);*/
 	opacity: 1.0;
-	display: flex;
+	display: block;
+	vertical-align: center;
 }
 
 /*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
 THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
 A CUSTOM FONT AND CONTROLS THAT*/
 .tdbg {
-	max-width: 60%; 
+	max-width: 100%; 
 	min-width: 10%;
 	color: white;
 	text-decoration: none;
@@ -215,10 +217,12 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-size: 1.875em;
 	font-stretch: condensed;
 	font-family: 'Nexa', sans-serif;
+	vertical-align: center;
+	text-align: center;
 }
 
 .tdbg2 {
-	max-width: 60%; 
+	max-width: 100%; 
 	min-width: 10%;
 	color: white;
 	text-decoration: none;
@@ -226,6 +230,8 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-weight: normal;
 	font-size: 1.875;
 	font-family: 'Nexa', sans-serif;
+	vertical-align: center;
+	text-align: center;
 }
 
 .hrsep {
@@ -247,19 +253,9 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	background-color: rgba(137, 196, 244,1);
 	margin-left: 0%;
 	box-shadow: 4px 4px 8px #181818; 
-	z-index: 3;
 }
 
-/* TABLE FOR INDEX.HTML */
-.tableindex {
-	border: 2px outset #ffffff;
-	border-radius: 2px;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(55, 151, 154,0.8);
-	margin-left: 0%;
-	margin-right:0%;
-	box-shadow: 4px 4px 8px #181818; 
-}
+
 
 
 
