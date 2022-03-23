@@ -406,3 +406,43 @@ MEDIA IMAGE LINKS */
 	font-stretch: condensed;
 	text-shadow: none;
 }
+
+.bodyiframe {
+	border: 1px outset #ffffff;
+	border-radius: 2px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	margin-top: 7%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(94, 148, 150,0.8);
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	min-width: 20%;
+	vertical-align: middle;
+	
+}
+
+.tableiframe {
+	border: 2px outset #ffffff;
+	border-radius: 2px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(55, 151, 154,0.8);
+	box-shadow: 4px 4px 8px #181818; 
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 1000px;
+}
+
+.iframeblog {
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
