@@ -1,14 +1,9 @@
 /*WRITTEN BY STEVIE EELES*/
-/*CSS IS ORDERED BY APPEARANCE IN HTML DOCUMENT*/
 
-/* MAIN DESKTOP CSS CONFIG */
 
-/*CONTROLS THE MAIN DOCUMENT, NO EDITING NEEDED
-UNLESS BACKGROUND COLOUR OR IMAGE NEED CHANGING*/
 .site_font {
-	font-family: 'Nexa', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
-/* MAIN CONTROLLING ELEMENTS */
 
 table, p, td, div {
 	vertical-align: center;
@@ -17,19 +12,13 @@ table, p, td, div {
 
 html {
 	background-color: rgba(97,117,117,0.8);
-	/* ORIGINAL background-color: rgba(0, 181, 204,1);*/
-	/*background-image: url(../images/bg.png);*/
 	background-attachment: fixed;
 	width: 100%;
 	height: auto;
 	scroll-behavior: smooth;
-	/*font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";*/
 	-webkit-font-smoothing: antialiased;
 }
 
-/* NAVIGATION AREA BEGINS */
-
-/* TABLE THAT CONTAINS THE NAVIGATION BAR */
 .nav_div {
 	width: 90%;
 	min-width: 5%;
@@ -49,7 +38,7 @@ html {
 .tablenav {
 	width: 100%;
 	min-width: 5%;
-	font-family: 'Nexa', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.5vw;
 	position: relative;
 	margin-left: auto;
@@ -58,8 +47,6 @@ html {
 	vertical-align: middle;
 }
 
-/*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
-PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
 
 ul {
   list-style-type: none;
@@ -229,33 +216,45 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 /*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
 THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
 A CUSTOM FONT AND CONTROLS THAT*/
-.tdbg {
+.header {
 	max-width: 100%; 
 	min-width: 10%;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-weight: normal;
-	font-size: 1.875em;
-	font-stretch: condensed;
-	font-family: 'Nexa', sans-serif;
-	vertical-align: center;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
 	text-align: center;
 }
 
-.tdbg2 {
+.bodytext {
 	max-width: 100%; 
 	min-width: 10%;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-weight: normal;
-	font-size: 16px;
-	font-family: 'Nexa', sans-serif;
-	vertical-align: center;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
 	text-align: center;
+	
 }
-
+h3.bodytext {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	
+}
 .tdbg_about {
 	width: 70%; 
 	height: 50%;
@@ -265,18 +264,17 @@ A CUSTOM FONT AND CONTROLS THAT*/
 	font-weight: normal;
 	font-size: medium;
 	font-stretch: 50%;
-	font-family: 'Nexa', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.tdbg_slide {
+.slideheader {
 	max-width: 100%; 
 	min-width: 10%;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-weight: normal;
-	font-size: 16px;
-	font-stretch: condensed;
-	font-family: 'Nexa', sans-serif;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
 	vertical-align: center;
 	text-align: center;
 }
