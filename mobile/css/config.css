@@ -22,19 +22,19 @@ body {
 	border: 1px outset #ffffff;
 	border-radius: 2px;
 /*	box-shadow: 4px 4px 8px #181818; */
-	padding-top: 10px;
+	padding-top: 2px;
 	padding-bottom: 0px;
 	padding-right: 0px;
-	padding-left: 5px;
+	padding-left: 0px;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-	margin-top: 3%;
+	margin-top: 2%;
 	margin-right: 0%;
-	margin-left: 3%;
+	margin-left: 1%;
 	background-color: rgba(94, 148, 150,0.8);
 	font-weight: normal;
 	color: #ffffff;
 	font-family: 'Nexa', sans-serif;
-	width: 93%;
+	width: 98%;
 }
 
 /* SLIGHTLY DIFFERENT EDIT OF THE BODY (ABOVE) 
@@ -65,8 +65,8 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	padding-right: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	max-width: 80%;
-	max-height: 80%;
+	max-width: 97%;
+	max-height: 97%;
 	box-shadow: 1px 2px 2px rgba(191,191,191,1);
 	display: flex;
 }
@@ -80,7 +80,7 @@ SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
 	opacity: 0.9;
 	height: 40%;
 	font-family: 'Nexa', sans-serif;
-	width: 80%;
+	width: 97%;
 }
 /*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
 PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
@@ -99,7 +99,7 @@ PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 35px;
   display: block;
 }
 
@@ -144,12 +144,13 @@ MEDIA IMAGE LINKS */
 .socials
 {
 	border: 1px solid rgba(255,255,255,1);
-	border-radius: 5px;
+	border-radius: 2px;
 	padding-right: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	width: 90px;
-	height: 90px;
+	margin-right: 10px;
+	width: 120px;
+	height: 120px;
 	/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
 
@@ -160,9 +161,10 @@ MEDIA IMAGE LINKS */
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(55, 151, 154,0.8);
 	opacity: 0.9;
-	width: 90%;
+	width: 97%;
 	font-weight: normal;
 	font-family: 'Nexa', sans-serif;
+	font-size: 25px;
 
 }
 
