@@ -1,142 +1,334 @@
 /*WRITTEN BY STEVIE EELES*/
 
-/* MAIN MOBILE CSS CONFIG */
 
-/*CONTROLS THE MAIN DOCUMENT, NO EDITING NEEDED
-UNLESS BACKGROUND COLOUR OR IMAGE NEED CHANGING*/
+.site_font {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table, p, td, div {
+	vertical-align: center;
+	text-align: center;
+}
+
 html {
 	background-color: rgba(97,117,117,0.8);
 	background-attachment: fixed;
 	width: 100%;
 	height: auto;
 	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
 }
 
-.site_font {
-	font-family: 'Nexa', sans-serif;
-}
-
-/*CONTROLS THE MAIN BODY - THE LIGHT BLUE AREA.
-AGAIN, PROBABLY NO EDIITING NEEDED*/
-body {
+.nav_div {
+	width: 90%;
+	min-width: 5%;
+	min-height: 5%;
 	border: 1px outset #ffffff;
 	border-radius: 2px;
-/*	box-shadow: 4px 4px 8px #181818; */
-	padding-top: 2px;
-	padding-bottom: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-	margin-top: 2%;
-	margin-right: 0%;
-	margin-left: 1%;
-	background-color: rgba(94, 148, 150,0.8);
-	font-weight: normal;
-	color: #ffffff;
-	font-family: 'Nexa', sans-serif;
-	width: 98%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(94, 148, 150,1);
+	opacity: 1.0;
+	box-shadow: 4px 4px 8px #181818; 
+	top: 0%;
+	margin-left: 5%;
+	margin-right: 5%;
+	position: fixed;
 }
 
-/* SLIGHTLY DIFFERENT EDIT OF THE BODY (ABOVE) 
-FOR THE BOOKS TABLE LAYOUR PAGE */
-.bodybooks {
-	border: 0px outset #ffffff;
-	border-radius: 10px;
-/*	box-shadow: 4px 4px 8px #181818; */
-	padding-top: 10px;
-	padding-bottom: 0px;
-	padding-right: 0px;
-	padding-left: 5px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-	margin-top: 3%;
-	margin-right: 0%;
-	margin-left: 3%;
-	background-color: rgba(149, 232, 215, 0.9);
-	font-weight: bold;
-	color: #ffffff;
-	width: 93%;
-}
-
-/*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
-SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
-.Logo {
-	border: 1px solid rgba(255,255,255,1);
-	border-radius: 2px;
-	padding-right: 0px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	max-width: 97%;
-	max-height: 97%;
-	box-shadow: 1px 2px 2px rgba(191,191,191,1);
-	display: flex;
-}
-
-/* TABLE THAT CONTAINS THE NAVIGATION BAR */
 .tablenav {
+	width: 100%;
+	min-width: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5vw;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 40%;
+	vertical-align: middle;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(94, 148, 150,0.8);
+}
+
+li {
+  float: left;
+
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: rgba(137, 196, 244,1);
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(97,117,117,0.8);
+  color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+	border-radius: 2px;
+	display: none;
+	position: absolute;
+	background-color: rgba(94, 148, 150,1);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgba(97,117,117,0.8);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hrsepnav {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	max-width: 30%;
+	min-width: 5%;
+}
+
+a:link {
+  color: white
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: gray;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+/*NAVIGATION AREA ENDS*/
+
+.righttable2 {
+	border: 1px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(94, 148, 150,0.8);
+	box-shadow: 4px 4px 8px #181818; 
+	padding-left: 0.0%;
+	padding-right: 0.0%;
+	padding-top: 0.0%;
+	padding-bottom: 0.0%;
+	top: 2%;
+	right:3%;
+	position: fixed;
+	width: 14%;
+	max-width: 100%;
+	display: block;
+	text-align: center;
+	vertical-align: center;
+}
+
+
+/*CONTROLS THE MAIN BODY - the main square in the middle.
+AGAIN, PROBABLY NO EDIITING NEEDED*/
+.bodyindex {
+	border: 1px outset #ffffff;
+	border-radius: 2px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	margin-top: 7%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(94, 148, 150,0.8);
+	color: #ffffff;
+	display: block;
+	width: 80%;
+	min-width: 20%;
+	vertical-align: middle;
+	
+}
+
+/* TABLE FOR INDEX.HTML */
+.tableindex {
 	border: 2px outset #ffffff;
 	border-radius: 2px;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(55, 151, 154,0.8);
-	opacity: 0.9;
-	height: 40%;
-	font-family: 'Nexa', sans-serif;
-	width: 97%;
-}
-/*COLOUR AND FORMATTING CONTROLS FOR VARIOUS 
-PARTS OF THE NAVIGATION BAR. NO EDITING NEEDED HERE*/
-.topnav {
-  overflow: hidden;
-  background-color: rgba(55, 151, 154,0.8);
-  position: relative;
-  border-radius: 2px;
+	margin-left: auto;
+	margin-right:auto;
+	box-shadow: 4px 4px 8px #181818; 
+	vertical-align: middle;
+	text-align: center;
+	width: 70%;
 }
 
-.topnav #myLinks {
-  display: none;
+/*THE FIRST THING YOU SEE, THE LOGO. THIS JUST
+SETS THE SIZE, ROUNDED CORNERS, SHADOWS AND SO ON*/
+.logo {
+	max-width: 60%;
+	min-width: 10%;
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 5px;
+	padding-right: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 176px;
+	/*box-shadow: 4px 6px 6px rgba(97,117,117,1);*/
+	opacity: 1.0;
+	display: block;
+	vertical-align: center;
 }
 
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 35px;
-  display: block;
+/*FOR ADDING IMAGES TO <TD> ELEMENTS INSTEAD OF 
+THE WHOLE TABLE BACKGROUND - CURRENTLY JUST ADDS
+A CUSTOM FONT AND CONTROLS THAT*/
+.header {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	text-align: center;
 }
 
-.topnav a.icon {
-  background: rgba(55, 151, 154,0.8);
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  top: 0;
-  border-radius: 2px;
-  color: black;
+.bodytext {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+h3.bodytext {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+.tdbg_about {
+	width: 70%; 
+	height: 50%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: medium;
+	font-stretch: 50%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.slideheader {
+	max-width: 100%; 
+	min-width: 10%;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: center;
+	text-align: center;
+}
+.hrsep {
+	border: 4px ridge #ffffff;
+	border-radius: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	max-width: 60%;
+	min-width: 10%;
 }
 
-.topnav a:hover {
-  background-color: rgba(97,117,117,0.8);
-  color: black;
+
+/*THE MAIN light blue table with BODY TEXT IN */
+/* UNIVERSAL TABLE SETTINGS*/
+.tablemain {
+	border: 2px outset #ffffff;
+	border-radius: 2px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(137, 196, 244,1);
+	margin-left: 0%;
+	box-shadow: 4px 4px 8px #181818; 
+}
+.images
+{
+	max-width: 100%;
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 2px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+	
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
 
-.active a:hover {
-  background-color: rgba(137, 196, 244,1);
-  color: white;
-}
+/*TO MAKE THE BOOK IMAGES RESIZE IN SMALLER WINDOWS */
+.bookimages
+{
+	border: 1px solid rgba(255,255,255,1);
+	border-radius: 2px;
+	max-width: 100%;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 
-.topnavnohover a:hover {
-  background-color: rgba(55, 151, 154,0.8);
-  color: white;
-}
-
-/* FOR LINKS IN THE PAGE, NOT PART OF THE NAVIGATION BAR */
-a:link, a:visited, a:active  {
- 	color: white;
-	text-shadow: none;
-}
-a:hover {
-	color:white;
-	/*text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);*/
+	
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
 
 /* CONTROLS THE BORDERS AND FORMATTING OF THE SOCIAL
@@ -144,37 +336,15 @@ MEDIA IMAGE LINKS */
 .socials
 {
 	border: 1px solid rgba(255,255,255,1);
-	border-radius: 2px;
+	border-radius: 5px;
 	padding-right: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-right: 10px;
-	width: 120px;
-	height: 120px;
-	/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
+	width: 40px;
+	height: 40px;
+
+/*box-shadow: 5px 7px 7px rgba(191,191,191,1);*/
 }
-
-/*THE MAIN PURPLE TABLE WITH THE MAIN BODY TEXT IN */
-.tablemain {
-	border: 2px outset #ffffff;
-	border-radius: 2px;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(55, 151, 154,0.8);
-	opacity: 0.9;
-	width: 97%;
-	font-weight: normal;
-	font-family: 'Nexa', sans-serif;
-	font-size: 25px;
-
-}
-
-/* NOT USED AT ALL, KEPT INCASE */
-/*.seperator {
-	border: 4px ridge #ffffff;
-	border-radius: 2px;
-	margin-top: 6px;
-	margin-bottom: 6px;
-*/
 
 /* FOOTER AT THE BOTTOM OF THE PAGE. NO EDITING NEEDED */
 .bottom {
@@ -184,10 +354,197 @@ MEDIA IMAGE LINKS */
   width: 100%;
   color: #ffffff;
   text-align: center;
+
 }
 
-/* CANT REMEMBER WHAT THIS IS FOR, BUT ITS IN USE */
-.small {
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.righttable1 {
+	border: 1px outset #ffffff;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(144,153,212,1);
+	box-shadow: 4px 4px 8px #181818; 
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	top: 2%;
+	right:2%;
+	position: fixed;
+	width: 14%;
+	max-width: 100%;
+	display: block;
+}
+
+
+.tableindex_right {
+	max-width:100%;
+	border: 2px outset #ffffff;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(55, 151, 154,0.8);
+	margin-left: 0%;
+	margin-right:0%;
+	box-shadow: 4px 4px 8px #181818; 
+	float: right;
+}
+.noshadow {
 	color: white;
 	text-decoration: none;
+	font-weight: normal;
+	/*font-size: 1.875em;*/
+	font-stretch: condensed;
+	text-shadow: none;
+}
+
+.bodyiframe {
+	border: 1px outset #ffffff;
+	border-radius: 2px;
+	box-shadow: 4px 4px 8px #181818; 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 4px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	margin-top: 7%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(94, 148, 150,0.8);
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	min-width: 20%;
+	vertical-align: middle;
+	
+}
+
+.tableiframe {
+	border: 2px outset #ffffff;
+	border-radius: 2px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(55, 151, 154,0.8);
+	box-shadow: 4px 4px 8px #181818; 
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 1000px;
+}
+
+.iframeblog {
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.cookie-banner {
+  position: fixed;
+	left: 3px;
+    width: 10%;
+	bottom: 5px;
+  padding: 5px 14px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(55, 151, 154,0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.comments .comment_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.comments .comment_header .total {
+    color: #777777;
+    font-size: 14px;
+}
+.comments .comment_header .write_comment_btn {
+    margin: 0;
+}
+.comments .write_comment_btn, .comments .write_comment button {
+    display: inline-block;
+    background-color: #565656;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+}
+.comments .write_comment_btn:hover, .comments .write_comment button:hover {
+    background-color: #636363;
+}
+.comments .write_comment {
+    display: none;
+    padding: 20px 0 10px 0;
+}
+.comments .write_comment textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 150px;
+    margin-top: 10px;
+}
+.comments .write_comment input {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.comments .write_comment button {
+    cursor: pointer;
+}
+.comments .comment {
+    padding-top: 10px;
+}
+.comments .comment .name {
+    display: inline;
+    padding: 0 5px 3px 0;
+    margin: 0;
+    font-size: 16px;
+    color: #555555;
+}
+.comments .comment .date {
+    color: #888888;
+    font-size: 14px;
+}
+.comments .comment .content {
+    padding: 5px 0 5px 0;
+}
+.comments .comment .reply_comment_btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888888;
+}
+.comments .comment .replies {
+    padding-left: 30px;
 }
